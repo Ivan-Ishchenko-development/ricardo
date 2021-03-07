@@ -1,11 +1,11 @@
 const win_height_padded = $(window).height() * 0.8;
 
-$(window).resize(function() {
-    let height = $(".wrapper-video").siblings("img").height()
-    $($(".wrapper-video")[0]).css("height",height);
-    $($(".wrapper-video")[1]).css("height",height);
-});
-    
+// $(window).resize(function() {
+//     let height = $(".wrapper-video").siblings("img").height()
+//     $($(".wrapper-video")[0]).css("height",height);
+//     $($(".wrapper-video")[1]).css("height",height);
+// });
+//
 
 $(document).ready(function () {
     // $('.slider').slick({
