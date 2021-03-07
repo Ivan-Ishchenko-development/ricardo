@@ -38,3 +38,26 @@
   color: #909090;
     font-size: 12px;
 }
+
+@media screen and (max-width: 600px){
+    .bought-widget-card {
+        padding: 12px;
+    }
+
+    .bought-widget-card .bought-widget-card__image > img {
+        max-height: 35px;
+    }
+
+    .bought-widget-card .bought-widget-card__text {
+        margin-left: 10px;
+        font-size: 9px;
+    }
+    .bought-widget-card .bought-widget-card__text .text__name {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+
+    .bought-widget-card .bought-widget-card__text .text__time {
+        font-size: 8px;
+    }
+}
