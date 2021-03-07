@@ -9,7 +9,7 @@ body{
 }
 
 h1{
-    text-transform: uppercase;
+    text-transform: normal;
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    text-transform: uppercase;
+    text-transform: normal;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -57,7 +57,7 @@ a{
 }
 
 .p-19{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 header{
@@ -70,7 +70,7 @@ header img{
 }
 
 .main-section{
-    padding: 52px 0;
+    padding: 30px 0;
     background-color: #21253E;
     color: white;
 }
@@ -81,11 +81,11 @@ header img{
 }
 
 .main-section .green-line{
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 .main-section .wrapper{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,11 +116,11 @@ header img{
 }
 
 .main-section .quality{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .main-section .quality > div{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .main-section .quality img{
@@ -140,8 +140,9 @@ header img{
     cursor: pointer;
     text-align: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     background-color: var(--green-color);
+	font-size: 18px;
 }
 
 .button-link:hover{
@@ -159,6 +160,8 @@ header img{
 .button-link p{
     font-size: 13px;
 }
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
 
 .button-sale{
     background-color: #FFFEDB;
@@ -254,7 +257,6 @@ header img{
 
 .third-section .wrapper{
     align-items: center;
-    margin-top: 40px;
     color: #494949;
 }
 
@@ -516,7 +518,7 @@ header img{
 .seventh-section .card-bottle .old-price{
     text-decoration: line-through;
     color: var(--dark-red-color);
-    font-size: 13px;
+    font-size: 14px;
     
 }
 
@@ -529,7 +531,7 @@ header img{
 }
 
 .seventh-section .card-bottle .price-card-bottle{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .seventh-section .card-bottle .button-save{
@@ -548,7 +550,7 @@ header img{
 }
 
 .seventh-section .card-bottle .guarantee-card-bottle{
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 5px;
 }
 
@@ -601,6 +603,7 @@ footer .wrapper a{
 
 .img-garantirt img{
     margin: 0 auto;
+	max-width: 70%;
 }
 
 
@@ -623,6 +626,12 @@ footer .wrapper a{
     background: url(../img/Rectangle.png);
 }
 
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+}
+
 .seventh-section .card-bottle:hover{
     box-shadow: 2px 2px 15px 0 rgb(0 0 0 / 50%);
     -ms-transform: scale(1.02);
@@ -630,12 +639,37 @@ footer .wrapper a{
     transform: scale(1.02);
 }
 
+.seventh-section .card-bottle .title-bottle,.now-price,.button-save,.price-card-bottle{
+    color: black;
+}
+
+.seventh-section .card-bottle .button-buy,.button-best{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.text-center{
+    text-align: center;
+}
 
 
 @media screen and (max-width: 1200px){
 
     .container{
         width: 90%;
+    }
+
+    .seventh-section .wrapper .price-card-bottle{
+        font-size: 12px;
+    }
+
+    .seventh-section  .wrapper .old-price{
+        font-size: 12px;
+    }
+
+    .seventh-section .wrapper .now-price{
+        font-size: 20px;
     }
 }
 
@@ -696,9 +730,9 @@ footer .wrapper a{
         width: 70%;
     }
 
-    .fourth-section .wrapper .info{
+    /*.fourth-section .wrapper .info{
         margin-top: 40px;
-    }
+    }*/
 
     .fifth-section .cards-wrapper-mobile .card-block{
         display: block;
@@ -706,7 +740,8 @@ footer .wrapper a{
 
     .fifth-section .cards-wrapper-mobile .car-img{
         margin-top: 12px;
-        width: 60%;
+        /*width: 60%;*/
+        width: 100%;
         height: auto;
     }
 
@@ -773,7 +808,22 @@ footer .wrapper a{
 
     .seventh-section  .card-bottle-mobile img{
         margin-right: 10px;
+        margin-left: 5px;
     }
+    .seventh-section  .img-bottle1{
+        width: 20%;
+    }
+    .seventh-section  .img-bottle2{
+        width: 20%;
+    }
+    .seventh-section  .img-bottle3{
+        width: 20%;
+    }
+
+    .background-orange{
+        background-color: #FFC439;
+    }
+
 
     .seventh-section .wrapper-mobile{
         width: 70%;
@@ -904,7 +954,7 @@ footer .wrapper a{
     }
 
     h1{
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .under-section h3{
@@ -948,5 +998,12 @@ footer .wrapper a{
     .main-section .wrapper .right-block{
         max-width: 100%;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .seventh-section .card-bottle-mobile-block{
+        width: 62%;
     }
 }
