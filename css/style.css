@@ -621,6 +621,11 @@ footer .wrapper a{
     background: url(../img/RectangleEmpty.png);
 }
 
+.wrapper-video {
+    min-width: 500px;
+    padding-bottom: 75%;
+}
+
 .checkbox:checked + label {
 	background: #9FD468;
     background: url(../img/Rectangle.png);
@@ -655,7 +660,10 @@ input[type="radio"] {
 
 
 @media screen and (max-width: 1200px){
-
+    .wrapper-video {
+        min-width: 400px;
+        padding-bottom: 75%;
+    }
     .container{
         width: 90%;
     }
@@ -674,7 +682,11 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 900px){
-
+    .wrapper-video {
+        min-width: 100%;
+        margin: 5px 0;
+        padding-bottom: 56.8%;
+    }
     .container{
         width: 90%;
     }
@@ -1006,4 +1018,5 @@ input[type="radio"] {
     .seventh-section .card-bottle-mobile-block{
         width: 62%;
     }
+    .wrapper-video { min-width: 100%; margin: 15px 0; }
 }

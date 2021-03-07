@@ -8,11 +8,11 @@ $(window).resize(function() {
     
 
 $(document).ready(function () {
-    $('.slider').slick({
-        dots: true,
-		autoplay: false,
-        arrows: false,
-    });
+    // $('.slider').slick({
+    //     dots: true,
+	// 	autoplay: false,
+    //     arrows: false,
+    // });
 
     $(window).scroll(function () {
         const scrolled = $(window).scrollTop();
@@ -37,9 +37,9 @@ $(document).ready(function () {
     });
 
     
-    let height = $(".wrapper-video").siblings("img").height()
-    $($(".wrapper-video")[0]).css("height",height);
-    $($(".wrapper-video")[1]).css("height",height);
+    // let height = $(".wrapper-video").siblings("img").height()
+    // $($(".wrapper-video")[0]).css("height",height);
+    // $($(".wrapper-video")[1]).css("height",height);
 
     $(".checkbox-label").on("click", function(){
         let url = $(this).parents(".link-a").attr('href')
