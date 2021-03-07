@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     const widgetContainer = $('#bought-widget');
     const appearingDelaySec = 5;
-    const animationFrequency = 5;
+    const animationFrequency = 30;
 
     const widgetTexts = [
         {name: 'Vlad', amount: 3, time: 'vor 1 Minute'},
